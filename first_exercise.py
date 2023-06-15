@@ -1,4 +1,4 @@
-from shared import get_completion
+from shared import get_completion, get_completion_as_stream
 
 """
  Tactic #1: use delimiters to clearly indicate distinct parts of the input,
@@ -25,5 +25,5 @@ def first_exercise():
         into a single sentence.
         ```{text}```
         """
-    response = get_completion(prompt)
+    response = get_completion_as_stream(prompt)
     print(response)
